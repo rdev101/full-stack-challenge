@@ -8,7 +8,7 @@ function TaskDetail() {
   const id = parseInt("GET FROM URL PARAM");
   const dispatch = useDispatch();
   const task: Task | null = useSelector((state: RootState) => {
-    return state.tasks.tasks.find((task) => task.id === id) || null;
+    return state.tasks.tasks.find((task: Task) => task.id === id) || null;
   });
 
   useEffect(() => {

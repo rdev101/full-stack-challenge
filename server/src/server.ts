@@ -6,7 +6,7 @@ dotenv.config();
 
 const app: Express = express();
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 const tasks: Task[] = [{ id: 1, title: "First task" }];
 

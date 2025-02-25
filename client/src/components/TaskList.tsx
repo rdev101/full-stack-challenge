@@ -1,6 +1,5 @@
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import { Trash2 } from "lucide-react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
@@ -39,7 +38,7 @@ function TaskList() {
           <strong>Render the list of tasks</strong>
           <strong> - </strong>
           {/* Add DELETE function */}
-          <FontAwesomeIcon icon={faTrash} />
+          <Trash2 onClick={() => console.log("DELETE")} />
         </div>
       </ul>
     </div>
