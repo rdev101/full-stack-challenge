@@ -11,13 +11,13 @@ function TaskList() {
   const [newTask, setNewTask] = useState("");
 
   // Fetch tasks from the backend when the component MOUNTS
-  axios.get<Task[]>("/tasks");
+  axios.get<Task[]>("/api/tasks");
   // Update the Redux state with the fetched tasks
 
   // Handle adding a new task
   const handleAddTask = () => {
     if (newTask) {
-      axios.post<Task>("/create-task", { title: newTask });
+      axios.post<Task>("/api/create-task", { title: newTask });
       // Handle adding a new task
       // Update the Redux state with the new task
       // Clear the input field
