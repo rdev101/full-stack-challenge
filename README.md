@@ -4,6 +4,9 @@ This is a task list application built with a **React frontend** and a **Node.js 
 
 ---
 
+## Prerequisite
+1. Install node v22.14.0 and npm 10.9.2 https://nodejs.org/en/download
+
 ## **Frontend (React)**
 
 The frontend is built with React, as part of the challenge, create the following features:
@@ -31,6 +34,7 @@ The frontend is built with React, as part of the challenge, create the following
 ## **Backend (Node.js)**
 
 The backend is built with Node.js as part of the challenge, create the following RESTful API endpoints:
+**Note: to access the api from your frontend prefix /api/, example: /api/tasks/**
 
 - **GET `/tasks/:id`**:  
   Fetches a specific task by its unique ID.  
